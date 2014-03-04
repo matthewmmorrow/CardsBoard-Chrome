@@ -2,21 +2,21 @@
 Copyright 2014 Matthew M Morrow
 http://matthewmmorrow.com
 
-This file is part of Chrome Now extension for Chrome.
-http://chromenow.oneweekonewebsite.com
+This file is part of Cards Board extension for Chrome.
+http://cardsboard.oneweekonewebsite.com
 
-Chrome Now is distributed in the hope that it will be useful,
+Cards Board is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-ChromeNow is ALL RIGHTS RESERVED except card.js:
+Cards Board is ALL RIGHTS RESERVED except card.js:
 
 card.js is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version with the following exceptions:
 You cannot use the cards.js to make a Chrome new tab replacement 
-but you can use it to extend Chrome Now or other purposes.
+but you can use it to extend Cards Board or other purposes.
 
 card.js is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -27,7 +27,7 @@ You should have received a copy of the GNU General Public License
 along with card.js.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-var chromenow = (function (module) {
+var cardsboard = (function (module) {
 	module.nowExtensionId = 'cpofkpjfjccpjjfnbbjlmdakpegeicek';
 	
 	//Checks whether an extension is blacklisted
@@ -64,8 +64,8 @@ var chromenow = (function (module) {
 			this.isRemote = false;
 		}
 	};
-	module.Card.prototype.name = "Chrome Now card";
-	module.Card.prototype.description = "A card for Chrome Now";
+	module.Card.prototype.name = "Cards Board card";
+	module.Card.prototype.description = "A card for Cards Board";
 	module.Card.prototype.author = "Matthew Morrow";
 	module.Card.prototype.setCardId = function(cardId){
 		this.cardId = cardId;
@@ -226,8 +226,8 @@ var chromenow = (function (module) {
 		
 		this.loadCards();
 	};
-	module.Extension.prototype.name = "Chrome Now extension";
-	module.Extension.prototype.description = "An extension for Chrome Now";
+	module.Extension.prototype.name = "Cards Board extension";
+	module.Extension.prototype.description = "An extension for Cards Board";
 	module.Extension.prototype.author = "Matthew Morrow";
 	module.Extension.prototype.getDetails = function() {
 		var cardTypes = {};
@@ -390,4 +390,4 @@ var chromenow = (function (module) {
 	};
 	
 	return module;
-}(chromenow || {}));
+}(cardsboard || {}));

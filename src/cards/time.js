@@ -2,24 +2,24 @@
 Copyright 2014 Matthew M Morrow
 http://matthewmmorrow.com
 
-This file is part of Chrome Now - Chrome Package an extension for the Chrome Now extension for Chrome.
-http://chromenow.oneweekonewebsite.com
+This file is part of Cards Board - Chrome Package an extension for the Cards Board extension for Chrome.
+http://cardsboard.oneweekonewebsite.com
 
-Chrome Now - Chrome Package is free software: you can redistribute it and/or modify
+Cards Board - Chrome Package is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Chrome Now - Chrome Package is distributed in the hope that it will be useful,
+Cards Board - Chrome Package is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Chrome Now - Chrome Package.  If not, see <http://www.gnu.org/licenses/>.
+along with Cards Board - Chrome Package.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-var chromenow = (function (module) {
+var cardsboard = (function (module) {
 	//Create a card constructor
 	var time = function(cardId){this.setCardId(cardId);};
 	time.prototype = new module.Card("time", chrome.runtime.id);
@@ -64,4 +64,4 @@ var chromenow = (function (module) {
 	module.baseExtension.cardTypes["time"] = time;
 	
 	return module;
-}(chromenow));
+}(cardsboard));
